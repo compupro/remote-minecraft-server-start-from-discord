@@ -1,0 +1,6 @@
+{
+	"trigger_word":"run el server por favor",
+	"server_jar_path":"/path/to/server.jar",
+	"server_working_directory":"/path/to/server/files/directory/",
+	"bot_token":"DISCORD BOT TOKEN"
+}
