@@ -2,7 +2,8 @@
 A Discord bot that listens for a trigger phrase that will cause it to run a Minecraft server.
 
 ## Dependencies
-You need to install [discord.py](https://github.com/Rapptz/discord.py), the Discord API wrapper used. This bot has been tested on v0.16.6.
+* Python3 version **before** 3.7, because discord.py does not work on 3.7.
+* [discord.py](https://github.com/Rapptz/discord.py), the Discord API wrapper used. This bot has been tested on v0.16.6.
 
 ## Setup
 Before running the bot from `bot_main.py`, you must set a few options in `settings.json`:
