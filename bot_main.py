@@ -17,7 +17,7 @@ server_thread = None
 
 @bot.event
 async def on_ready():
-    await bot.change_presence(game=discord.Game(name='without a server.'))
+    await bot.change_presence(activity=discord.Game(name='without a server.'))
     print("Bot service started successfully.")
     
 @bot.event
@@ -31,15 +31,15 @@ async def on_message(message):
             server_thread = None
             
         if server_thread == None:
-            await bot.send_message(message.channel, "Starting Minecraft server.")
+            await message.channel.send("Starting Minecraft server.")
             print("{} (ID {}) started the Minecraft server.".format(message.author.display_name, message.author.id))
             start_server = lambda: os.system('java -jar ' + bot_settings['server_jar_path'])
             server_thread = threading.Thread(target=start_server)
             server_thread.start()
-            await bot.change_presence(game=discord.Game(name='with a server.'))
+            await bot.change_presence(activity=discord.Game(name='with a server.'))
             print("Minecraft server started successfully.")
         else:
-            await bot.send_message(message.channel, "Minecraft server already running!")
+            await message.channel.send("Minecraft server already running!")
             
 #run the bot
 bot.run(bot_settings['bot_token'])
