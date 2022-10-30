@@ -4,6 +4,9 @@ import json
 import asyncio
 import threading
 
+#new requirement: explicit intents
+intents = discord.Intents.default()
+
 #load the settings
 with open('settings.json', 'r') as settings_file:
     settings_json = settings_file.read()
