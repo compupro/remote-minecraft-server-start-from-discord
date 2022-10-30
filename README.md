@@ -3,7 +3,7 @@ A Discord bot that listens for a trigger phrase that will cause it to run a Mine
 
 ## Dependencies
 * Python3 version **after** 3.8, because discord.py requires it.
-* [discord.py](https://github.com/Rapptz/discord.py), the Discord API wrapper used. This bot has been tested on v1.7.3.
+* [discord.py](https://github.com/Rapptz/discord.py), the Discord API wrapper used. This bot has been tested on v2.0.1.
 
 ## Setup
 Before running the bot from `bot_main.py`, you must set a few options in `settings.json`:
