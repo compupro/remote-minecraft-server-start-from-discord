@@ -5,6 +5,7 @@ import asyncio
 import threading
 
 intents = discord.Intents.default()
+intents.message_content = True
 
 #load the settings
 with open('settings.json', 'r') as settings_file:
