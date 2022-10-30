@@ -4,7 +4,6 @@ import json
 import asyncio
 import threading
 
-#new requirement: explicit intents
 intents = discord.Intents.default()
 
 #load the settings
@@ -15,7 +14,7 @@ with open('settings.json', 'r') as settings_file:
 
 #set up the bot
 os.chdir(bot_settings['server_working_directory'])
-bot = discord.Client()
+bot = discord.Client(intents=intents)
 server_thread = None
 
 @bot.event
