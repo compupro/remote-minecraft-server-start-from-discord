@@ -12,4 +12,5 @@ Before running the bot from `bot_main.py`, you must set a few options in `settin
 * `server_working_directory`: the place where you want all the server's files (e.g. map, server.properties, etc.) are.
 * `bot_token`: the bot token you got from [Discord's "My Apps page"](https://discordapp.com/developers/applications/me)
 
-On Windows devices you must use double backslashes in your file and directory paths. otherwise the slashes will be treated as escape characters.
+  * Windows users must use double backslashes their file paths, single backslashes will be treated as escape characters.
+* Make sure to allow `Message Content Intent` in the Developer Portal under the `Bot` section!
